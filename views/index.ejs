@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>User list</title>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>タイトル</th>
+        <th>著者</th>
+        <th>出版社</th>
+        <th>更新</th>
+        <th>削除</th>
+      </tr>
+      <% book.forEach(function (value) { %>
+      <tr>
+        <td><%= value.title %></td>
+        <td><%= value.author %></td>
+        <td><%= value.publisher %></td>
+        <td><a href="/edit/<%= value.title %>">更新</a></td>
+        <td><a href="/delete/<%= value.title %>">削除</a></td>
+      </tr>
+      <% }); %>
+    </table>
+
+    <h2>蔵書を追加する</h2>
+
+    <a href="/add">追加</a>
+  </body>
+</html>
