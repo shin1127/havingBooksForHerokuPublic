@@ -1,5 +1,8 @@
 # habingBooksForHerokuPublic
 
+パスワードなどの情報を隠した公開用のリポジトリ
+
+
 ScrapBoxからの引用
 あとで編集する予定
 
