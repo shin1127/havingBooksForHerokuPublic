@@ -1,27 +1,12 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>User list</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
     <link rel="stylesheet" href="/index.css" />
   </head>
   <body>
-    <script>
-      function disp(title) {
-        if (window.confirm("削除しますか？")) {
-          location.href = "/delete/" + title;
-        } else {
-          window.alert("キャンセルされました");
-        }
-      }
-
-      function clickSearch() {
-        var inputwords = document.getElementById("searchWord").value;
-        var link = "/search/" + inputwords;
-        document.location = link;
-        console.log(inputwords);
-      }
-    </script>
     <h1>蔵書管理システム</h1>
     <h2>蔵書リスト</h2>
     <table>
@@ -48,15 +33,7 @@
       </tr>
       <% }); %>
     </table>
-
-    <h2>蔵書を追加する</h2>
-
-    <a href="/add"><h3>追加</h3></a>
-
-    <h2>蔵書を検索する</h2>
-    <form action="/search/:searchWord" method="get">
-      <input type="text" id="searchWord" />
-      <input type="button" value="検索" onclick="clickSearch()" />
-    </form>
+    <br />
+    <a href="/">TOP PAGE</a>
   </body>
 </html>
