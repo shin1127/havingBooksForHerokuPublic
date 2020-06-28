@@ -1,6 +1,7 @@
 # habingBooksForHerokuPublic
 
 パスワードなどの情報を隠した公開用のリポジトリ
+まさに今稼働しているWebアプリケーションと、ソースコードは同期していない可能性があります。
 
 
 ScrapBoxからの引用  
