@@ -39,4 +39,5 @@ mysql -hhogehoge.com -以下略
 > 	herokuにうｐする（ていねい）  
 > https://qiita.com/sho7650/items/ebd87c5dc2c4c7abb8f0  
 
-のGithubリンク先（https://github.com/heroku/node-js-getting-started）のpackege.jsonのほぼコピペになる（必要な部分だけコピペ）  
+のGithubリンク先https://github.com/heroku/node-js-getting-started 
+のpackege.jsonのほぼコピペになる（必要な部分だけコピペ）  
