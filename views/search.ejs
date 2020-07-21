@@ -1,39 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="/index.css" />
+    <%- include( "head.ejs" ); %>
+    <title>蔵書管理システム - 検索結果</title>
   </head>
+
   <body>
-    <h1>蔵書管理システム</h1>
-    <h2>蔵書リスト</h2>
-    <table>
-      <tr>
-        <th>タイトル</th>
-        <th>著者</th>
-        <th>出版社</th>
-        <th>更新</th>
-        <th>削除</th>
-      </tr>
-      <% book.forEach(function (value) { %>
-      <tr>
-        <td class="title"><%= value.title %></td>
-        <td><%= value.author %></td>
-        <td><%= value.publisher %></td>
-        <td><a href="/edit/<%= value.title %>">更新</a></td>
-        <td>
-          <a
-            href="/delete/<%= value.title %>"
-            onClick="disp('<%= value.title %>'); return false;"
-            >削除</a
-          >
-        </td>
-      </tr>
-      <% }); %>
-    </table>
-    <br />
-    <a href="/">TOP PAGE</a>
+    <header>
+      <%- include( "header.ejs" ); %>
+    </header>
+    <section class="block">
+      <h2>蔵書リスト</h2>
+      <table>
+        <tr>
+          <th>タイトル</th>
+          <th>著者</th>
+          <th>出版社</th>
+          <th>更新</th>
+          <th>削除</th>
+        </tr>
+        <% book.forEach(function (value) { %>
+        <tr>
+          <td class="title"><%= value.title %></td>
+          <td><%= value.author %></td>
+          <td><%= value.publisher %></td>
+          <td><a href="/edit/<%= value.title %>">更新</a></td>
+          <td>
+            <a
+              href="/delete/<%= value.title %>"
+              onClick="disp('<%= value.title %>'); return false;"
+              >削除</a
+            >
+          </td>
+        </tr>
+        <% }); %>
+      </table>
+      <br />
+
+      <a href="/">TOP PAGE</a>
+    </section>
   </body>
 </html>

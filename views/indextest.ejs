@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>蔵書管理システム</title>
+    <link rel="stylesheet" href="/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <header>
+    <h1>蔵書管理システム</h1>
+  </header>
+  <body>
+    <script>
+      function disp(title) {
+        if (window.confirm("削除しますか？")) {
+          location.href = "/delete/" + title;
+        } else {
+          window.alert("キャンセルされました");
+        }
+      }
+
+      function clickSearch() {
+        var inputwords = document.getElementById("searchWord").value;
+        var link = "/search/" + inputwords;
+        document.location = link;
+        console.log(inputwords);
+      }
+    </script>
+
+    <% for(let i = 1; i < 10; i++){ %>
+    <a href="hogehoge.html">テスト</a>
+    <% } %> <% book.forEach(function (value) { %>
+
+    <tr>
+      <td class="title">
+        <a href="/detail/<%= value.title %>"><%= value.title %></a>
+      </td>
+      <td><%= value.author %></td>
+      <td><%= value.publisher %></td>
+      <td>
+        <% for (let i = 0; i < value.colored; i++){ %>
+        <span class="fa fa-star checked"></span>
+        <% } %> <% for (let i = 0; i < value.uncolored; i++){ %>
+        <span class="fa fa-star unchecked"></span>
+        <% } %>
+      </td>
+      <td><%= value.month; %>/<%= value.date %></td>
+      <td><a href="/edit/<%= value.title %>">更新</a></td>
+      <td>
+        <a
+          href="/delete/<%= value.title %>"
+          onClick="disp('<%= value.title %>'); return false;"
+          >削除</a
+        >
+      </td>
+    </tr>
+    <% }); %>
+
+    <div class="searchBox">
+      <h2>本を探す</h2>
+      <form action="/search/:searchWord" method="get">
+        <input type="text" id="searchWord" />
+        <input type="button" value="検索" onclick="clickSearch()" />
+      </form>
+    </div>
+
+    <section class="block">
+      <h2>蔵書リスト</h2>
+      <table>
+        <tr>
+          <th>タイトル</th>
+          <th>著者</th>
+          <th>出版社</th>
+          <th>評価</th>
+          <th>投稿日時</th>
+          <th>更新</th>
+          <th>削除</th>
+        </tr>
+        <% book.forEach(function (value) { %>
+
+        <tr>
+          <td class="title">
+            <a href="/detail/<%= value.title %>"><%= value.title %></a>
+          </td>
+          <td><%= value.author %></td>
+          <td><%= value.publisher %></td>
+          <td>
+            <% for (let i = 0; i < value.colored; i++){ %>
+            <span class="fa fa-star checked"></span>
+            <% } %> <% for (let i = 0; i < value.uncolored; i++){ %>
+            <span class="fa fa-star unchecked"></span>
+            <% } %>
+          </td>
+          <td><%= value.month; %>/<%= value.date %></td>
+          <td><a href="/edit/<%= value.title %>">更新</a></td>
+          <td>
+            <a
+              href="/delete/<%= value.title %>"
+              onClick="disp('<%= value.title %>'); return false;"
+              >削除</a
+            >
+          </td>
+        </tr>
+        <% }); %>
+      </table>
+      <br />
+    </section>
+
+    <section class="block">
+      <h2>蔵書を追加する</h2>
+
+      <a href="/add"><h3>追加</h3></a>
+      <br />
+    </section>
+  </body>
+</html>

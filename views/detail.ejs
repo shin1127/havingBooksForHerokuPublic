@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <%- include( "head.ejs" ); %>
+    <title>蔵書管理システム(α) %></title>
+  </head>
+  <body>
+    <header>
+      <%- include( "header.ejs" ); %>
+    </header>
+    <section class="block">
+      <img src="/uploads/<%= book[0].path %>" alt="" />
+      <h2><%= book[0].title %></h2>
+      著者：<%= book[0].author %>
+      <br />
+      出版社：<%= book[0].publisher %>
+      <br />
+      評価：<%= book[0].good %>
+      <br />
+      感想<br />
+      <%= book[0].feelings %>
+      <br />
+      <br />
+      <a href="/">TOP PAGE</a>
+    </section>
+  </body>
+</html>

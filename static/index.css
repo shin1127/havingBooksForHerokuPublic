@@ -1,12 +1,52 @@
 body {
-  padding: 10px;
   text-align: center;
+  background-color: #f3f5f6;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: orange;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+header a {
+  text-decoration: none;
+  color:white;
+  }
+}
+
+/* https://qiita.com/becolomochi/items/265a7f940a1c809f5ba7 */
+img {
+  object-fit: cover;
+  width: auto;
+  height: 250px;
+}
+
+.block {
+  background-color: white;
+  padding: 15px;
+  margin: 50px;
+  border-radius: 100px;
+}
+
+h1 {
+  margin: 0;
+  padding: 30px;
 }
 
 h1,
 h2,
 h3 {
   text-align: center;
+}
+
+div.searchBox {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 40px;
 }
 
 table {
@@ -37,4 +77,11 @@ table td.title {
 table tr {
   /* vertical-align: center; */
   padding-right: 3px;
+}
+
+.checked {
+  color: orange;
+}
+.unchecked {
+  color: grey;
 }
