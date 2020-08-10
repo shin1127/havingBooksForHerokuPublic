@@ -14,6 +14,10 @@
 これをWebアプリケーションとしてリリースして、  
 しかも自身だけではなく所属コミュニティメンバーなども技術書の追加や感想を書き込むことができたら面白いのではないか？と考えて開発をはじめた。  
 
+## Qiita / Output
+
+- [[Express]DBのデータを利用しつつイベントハンドラの実行、関数の定義・実行をする](https://qiita.com/cordy/items/7e38085e7ac9c74a4db5)
+- [DBから取り出したINT型フィールドを、星の数として表示する機能を実装する](https://qiita.com/cordy/items/0e91c78aad5ac4cda5f2)
 
 ## Others
 
