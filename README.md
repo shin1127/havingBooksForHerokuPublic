@@ -19,6 +19,7 @@
 - [[Express]DBのデータを利用しつつイベントハンドラの実行、関数の定義・実行をする](https://qiita.com/cordy/items/7e38085e7ac9c74a4db5)
 - [DBから取り出したINT型フィールドを、星の数として表示する機能を実装する](https://qiita.com/cordy/items/0e91c78aad5ac4cda5f2)
 
+
 ## Others
 
 ScrapBoxからの引用  
