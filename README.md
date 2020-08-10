@@ -20,7 +20,7 @@
 - [DBから取り出したINT型フィールドを、星の数として表示する機能を実装する](https://qiita.com/cordy/items/0e91c78aad5ac4cda5f2)
 
 
-## Others
+## Others / The things I learned
 
 ScrapBoxからの引用  
 あとで編集する予定  
