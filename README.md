@@ -36,8 +36,8 @@ app.listenはポート3000番でいいけど、herokuで3000番使えるとは�
 
 
  app.listen(process.env.PORT || 3000);  
-HerokuでNode.jsアプリを実行する際のポート番号について  
-https://chusotsu-program.com/heroku-node-port/  
+[HerokuでNode.jsアプリを実行する際のポート番号について]
+(https://chusotsu-program.com/heroku-node-port/)
 
 	herokuデプロイ時のエラーログの見方  
 1.herokuCLIをインストールする  
