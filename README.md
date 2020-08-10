@@ -42,7 +42,7 @@ https://chusotsu-program.com/heroku-node-port/
 1.herokuCLIをインストールする  
 2.コンソール上でログイン→　heroku login  
 3.ブラウザがたちあがるので認証  
-4.heroku -a havingbooks logsと入力　※ここでのhavingbooksはheroku上のアプリ名（Githubでいうリポジトリ名的な）  
+4.heroku havingbooks logs -a と入力　※ここでのhavingbooksはheroku上のアプリ名（Githubでいうリポジトリ名的な）  
 
 	node.js上でMySQLをログインさせるときの注意点  
 コンソール上で入力するのは以下だけど・・  
