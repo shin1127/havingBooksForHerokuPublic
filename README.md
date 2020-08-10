@@ -42,13 +42,13 @@ herokuデプロイ時のエラーログの見方
 3.ブラウザがたちあがるので認証  
 4.heroku havingbooks logs -a と入力　※ここでのhavingbooksはheroku上のアプリ名（Githubでいうリポジトリ名的な）  
 
-	node.js上でMySQLをログインさせるときの注意点  
+node.js上でMySQLをログインさせるときの注意点  
 コンソール上で入力するのは以下だけど・・  
 mysql -hhogehoge.com -以下略  
 
 ここで-hはホスト名っていう意味　ホスト名がhhoge...ということじゃない  
 
-	herokuにnode.jsをあげるときはpackage.jsonの中身が重要  
+herokuにnode.jsをあげるときはpackage.jsonの中身が重要  
 （herokuに必要なライブラリとか追加する必要がある、ローカルで動いた内容をそのままにしても動かない）  
 
 参考：https://github.com/heroku/node-js-getting-started 
