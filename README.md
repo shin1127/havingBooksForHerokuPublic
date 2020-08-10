@@ -1,9 +1,9 @@
-# habingBooksForHerokuPublic
+# havingBooksForHerokuPublic
 
 パスワードなどの情報を隠した公開用のリポジトリ  
 まさに今稼働しているWebアプリケーションと、当ソースコードは同期していない可能性があります。  
 
-※dotenvをherokuに適用させる方法がわからないため、とりあえずリポジトリを分けています
+※dotenvをherokuに適用させる方法がわからないため、とりあえず本番用とリポジトリを分けています
 
 # 開発中
 
