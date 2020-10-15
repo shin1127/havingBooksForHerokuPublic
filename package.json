@@ -1,7 +1,7 @@
 {
   "name": "combinedb",
   "version": "1.0.0",
-  "description": "",
+  "description": "パスワードなどの情報を隠した公開用のリポジトリ  \r まさに今稼働しているWebアプリケーションと、当ソースコードは同期していない可能性があります。",
   "main": "app.js",
   "engines": {
     "node": "12.x"
@@ -22,11 +22,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/shin1127/havingBookForHeroku"
+    "url": "git+https://github.com/shin1127/havingBookForHeroku.git"
   },
   "keywords": [
     "node",
     "heroku",
     "express"
-  ]
+  ],
+  "bugs": {
+    "url": "https://github.com/shin1127/havingBookForHeroku/issues"
+  },
+  "homepage": "https://github.com/shin1127/havingBookForHeroku#readme"
 }
